@@ -1,0 +1,36 @@
+<!--Quiz Kahoot Page-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kahoot Quiz</title>
+    <link rel="icon" href="../imgs/icon.png">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body id="quiz_body">
+    <div class="stats">
+        <p id="name">Name:</p>
+        <p id="score">Score: 0</p>
+        <p id="streak">Streak: 0</p>
+        <p id="questionsRight">0/0 questions right</p>
+    </div>
+    <h1 id="question">Question</h1>
+    <button onclick="checkAnswer(0)" class="answer-btn" style="background-color: green;">Answer 1</button>
+    <button onclick="checkAnswer(1)" class="answer-btn" style="background-color: red;">Answer 2</button>
+    <button onclick="checkAnswer(2)" class="answer-btn" style="background-color: blue;">Answer 3</button>
+    <button onclick="checkAnswer(3)" class="answer-btn" style="background-color: darkorange;">Answer 4</button>
+    
+    
+    <div id="game-end">
+            <h2>Game Ended</h1>
+            <h3>Stats</h3>
+            <p id="game-end-score">Score: 0</p>
+            <p id="game-end-streak">Streak: 0</p>
+            <p id="game-end-questionsRight"></p>
+            <button onclick="location.reload()">Play Again</button>
+    </div>
+</body>
+<script src="../scripts/gameScript.js"></script>
+</html>

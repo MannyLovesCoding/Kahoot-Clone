@@ -1,0 +1,42 @@
+<!--Create Your Own Kahoot Page-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create kahoot - Kahoot!</title>
+    <link rel="icon" href="../imgs/icon.png">
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="../scripts/script.js"></script>  
+</head>
+<body id="createkahoot_body">
+    <main>
+        <h1>Create a new kahoot</h1>
+        <label for="">Quiz Title</label>
+        <input type="text" placeholder="Science Test Review">
+        <div id="questions">
+            <div class="question-container" id="first-question-container">
+                <!--Question Titles-->
+                <label for="">Question 1</label>
+                <input type="text" class="question1-input question">
+                <!--Questions-->
+                <label for="">Answer 1</label>
+                <input type="text" class="question1-input question1-answer">
+                <label for="">Answer 2</label>
+                <input type="text" class="question1-input question1-answer">
+                <label for="">Answer 3</label>
+                <input type="text" class="question1-input question1-answer">
+                <label for="">Answer 4</label>
+                <input type="text" class="question1-input question1-answer">
+                <!--Correct Answer-->
+                <label for="">Correct Answer (1-4)</label>
+                <input type="number" class="question1-input correct-answer-input" min="1" max="4">
+                </div>
+        </div>
+        <button onclick="newQuestion()">Add another question</button>
+        <button onclick="createQuiz()">Finish creating Quiz</button>
+        <button onclick="cancel()">Cancel & Reset Local Storage</button>
+    </main>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!--Join Kahoot Page-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Game PIN - Kahoot!</title>
+    <link rel="icon" href="./resources/imgs/icon.png">
+    <link rel="stylesheet" href="./resources/css/index.css">
+    <script src="./resources/scripts/script.js"></script>
+</head>
+<body id="index_body">
+    <main>
+        <div class="containter" id="index_container">
+            <img id="logo" src="https://assets-cdn.kahoot.it/controller/v2/assets/icn_kahoot_logo-58b66a21.svg" alt="Logo">
+            <div id="game-data">
+                <input id="display-name" class="game-data-input" type="text" placeholder="Display Name" maxlength="20">
+                <label onclick="generateRandomName()" id="random-name-btn" for="">Generate Random Display Name</label>
+                <input id="game-pin" class="game-data-input" type="text" placeholder="Game PIN">
+                <button onclick="enterGame()" id="enter-btn">Enter</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <a id="create-kahoot-link" href="./resources/kahootcreate/kahootcreate.html">Create your own kahoot</a>
+        <p><a class="footer-links" href="https://trust.kahoot.com/terms-and-conditions/">Terms</a> | <a class="footer-links" href="https://trust.kahoot.com/privacy-policy/">Privacy</a></p>
+    </footer>
+</body>
+<script src="./resources/scripts/gamePinLoop.js"></script>
+</html>
